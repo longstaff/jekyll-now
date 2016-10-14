@@ -2,16 +2,37 @@
 layout: default
 ---
 
-<article class="post">
+<article class="post">  
   <h1>{{ page.title }}</h1>
+	<span>
+    <span class="post-date" style="display:inline-block;">{{ page.date | date_to_string }}</span>
+	    {% if page.category %}
+	    |
+	    	<a class="cat-mark" href="/category/#{{ page.category | slugify }}">{{ page.category }}</a>
+	    {% endif %}
+	    |
+	    {% for tag in page.tags %}
+	      <a class="tag-mark" href="/tag/#{{ tag | slugify }}">{{ tag }}</a>
+	    {% endfor %}
+  </span>
 
   <div class="entry">
     {{ content }}
   </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+	<div class="related">
+	  <h2 class="related-title">Related Posts</h2>
+	  <ul class="related-posts">
+	    {% for post in site.related_posts limit:3 %}
+	    <li>
+        <a href="{{ post.url }}">
+          {{ post.title }}
+          <span class="related-posts-date">{{ post.date | date_to_string }}</span>
+        </a>
+	    </li>
+	    {% endfor %}
+	  </ul>
+	</div>
 
   {% include disqus.html %}
 </article>

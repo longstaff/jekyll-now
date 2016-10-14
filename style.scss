@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
@@ -31,8 +32,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
+  font-family: 'Roboto', $helveticaNeue;
+  color: $textBlue;
   font-weight: bold;
 
   line-height: 1.7;
@@ -69,12 +70,15 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $linkLightBlue;
+  &:hover, &:active{
+    color: $linkBlue;
+  }
+  &:visitd{
+    color: $linkBlue;
+  }
   text-decoration: none;
 	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
 }
 
 ul, ol {
@@ -194,8 +198,6 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
 }
@@ -213,7 +215,6 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
   font-size: 18px;
 
   @include mobile {
@@ -225,14 +226,13 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $linkBlue;
     }
   }
 }
@@ -244,11 +244,6 @@ nav {
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
-}
-
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
 }
 
 .post {
@@ -281,6 +276,73 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+
+.post-date{
+  color: #ccc;
+  font-size: 70%;
+}
+
+.tag-mark {
+  padding:2px 5px;
+  border-radius: 5px;
+  background: $linkBlue;
+  border: 1px solid $linkLightBlue;
+  color: white;
+
+  font-size: 70%;
+
+  &:hover, &:active{
+    color: $white;
+    background: $linkLightBlue;
+  }
+}
+.cat-mark {
+  padding:2px 5px;
+  border-radius: 5px;
+  background: $linkBlue;
+  border: 1px solid $linkLightBlue;
+  color: white;
+
+  font-size: 70%;
+
+  &:hover, &:active{
+    color: $white;
+    background: $linkLightBlue;
+  }
+}
+
+.related{
+  padding:10px 0;
+
+  .related-title {
+    margin-bottom:0;
+  }
+
+  .related-posts {
+    list-style:none;
+    margin:0;
+    padding:0;
+
+    li {
+      margin:0;
+      padding:0;
+    }
+  }
+
+  .related-posts-date {
+    font-size: 80%;
+  }
+}
+
+.pagination {
+  padding: 20px 0 10px;
+  clear:both;
+
+  .newer{
+    float:right;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
