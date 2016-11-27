@@ -147,3 +147,6 @@ So you mock a server, throw in some basic styles and make half an interaction mo
 Everyone gets it wrong sometimes, gets carried away or just gets tunnel vision that what they are doing is the only way to do things. If you remember to examine your goals of your prototypes and what you are trying to achieve you can more easily see when you have exhausted one method and need to try something else.
 
 Think about your last projects, how did your prototypes work? did you maximise their usefulness, or did they become a burden to maintain? By planning your goals and aiming at specific targets you can get the most out of your time and effort.
+
+
+[https://drive.google.com/open?id=1NN97sR9nx0J0lwu6JjeF3hDCKpB-cMIA7KBP9Nhbdr0](Slides in google slides can be found here)
