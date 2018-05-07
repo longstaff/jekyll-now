@@ -12,4 +12,4 @@ Im also an [artist](/tag/#art), [photographer](/tag/#photo), [maker](/tag/#make)
 
 ### Work Life
 
-I currently work at UX agency [Idean](http://www.idean.com/)'s Helsinki office as a Lead Developer and can be seen buried in code, leading development teams, discussing projects with clients, being involved in design meetings and rapid prototyping for user tests. I am also a keen hacker so will be seen occasionally outside the office in hackathons.
+I currently work at [Elsevier](https://www.elsevier.com/)'s London office as a Javascript Engineer and can be seen buried in code, leading development teams, being involved in design meetings and rapid prototyping for user tests. I am also a keen hacker so will be seen occasionally outside the office in hackathons.
